@@ -87,4 +87,11 @@ west_virginia_ppp %>%
 ```{r}
 # Write the code to produce your answer here
 
+west_virginia_ppp %>%
+  filter(undisbursed_amount > 0) %>%
+  group_by(date_approved)
+  summarise(total = n()) %>%
+  arrange(desc(total))
+
+
 ```
