@@ -78,7 +78,7 @@ maryland_ppp %>%
 What is the payroll proceeds percentage for the first result? Put your answer in the space below.
 **Answer**
 
-469,800
+100%
 
 ### Task 7: Mutate with ordering, part 2
 **Task** Run the following code to order by our new column, but in ascending order
@@ -94,6 +94,7 @@ maryland_ppp %>%
 What is the payroll proceeds percentage for the first result? Put your answer in the space below.
 **Answer**
 
+0%
 
 ### Task 8: Create a new column using if/else
 **Task** Run the following code to create a new column called `in_out` based on the values of `servicing_lender_state`
@@ -131,6 +132,8 @@ nrow(large_prince_georges_nonprofit)
 What is the number of applications that meet that criteria? Put your answer in the space below.
 **Answer**
 
+Something wasn't quite working for me on this one.
+
 
 ### Task 11: Multiple filters - AND
 **Task** Run the following code to limit our data to Prince George's County loan applications from nonprofit organizations where the amount is larger than $150,000.
@@ -143,6 +146,8 @@ nrow(and_prince_georges)
 What is the number of applications that meet that criteria? Put your answer in the space below.
 **Answer**
 
+It keeps giving me an unexpected symbol occurring symbol.
+
 ### Task 12: Multiple filters - OR
 **Task** Run the following code to limit our data to Prince George's County loan applications OR applications from nonprofit organizations OR where the amount is larger than $150,000.
 
@@ -154,6 +159,7 @@ nrow(or_prince_georges)
 What is the number of applications that meet that criteria? Put your answer in the space below.
 **Answer**
 
+I got the same message.
 
 ## Dates
 
@@ -169,6 +175,8 @@ glimpse(maryland_ppp)
 What is the datatype for `date_approved` (it's just to the right of the column name)? Put your answer in the space below.
 **Answer**
 
+I believe it is a <chr>, or character datatpye.
+
 ### Task 14: Load data using lubridate
 **Task** Run the following code to load the application data, then use glimpse() to see the data type for `date_approved`.
 
@@ -181,6 +189,7 @@ glimpse(lubridate_maryland_ppp)
 What is the datatype for `date_approved` (it's just to the right of the column name)? Put your answer in the space below.
 **Answer**
 
+I believe it is a <chr>, or character datatpye.
 
 ### Task 14: Load data using read_csv
 **Task** Run the following code to load the application data, then use glimpse() to see the data type for `date_approved`.
@@ -191,6 +200,8 @@ glimpse(maryland_ppp)
 ```
 What is the datatype for `date_approved` (it's just to the right of the column name)? Put your answer in the space below.
 **Answer**
+
+I believe it is a <dttm>, or a date and time datatype.
 
 ### Task 14: Use mutate and lubridate to add a column called `Month` and see which month had the most applications.
 **Task** Run the following code to create a new column based on `date_approved`
@@ -204,3 +215,5 @@ maryland_ppp %>%
 ```
 What month saw the most applications and how many? Put your answer in the space below.
 **Answer**
+
+March saw the most applicants with 45,043.
